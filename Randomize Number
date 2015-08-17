@@ -1,0 +1,17 @@
+
+    @IBAction func playRoundTapped(sender: UIButton) {
+        
+        //creates first random number
+        var firstRandomNumber = arc4random_uniform(13) + 1
+        var firstCardString:String = String(format: "card%i", firstRandomNumber)
+        
+        
+        //creates second random number
+        var secondRandomNumber = arc4random_uniform(13) + 1
+        var secondCardString:String = String(format: "card%i", secondRandomNumber)
+       
+        
+        //randomizes a card to output to the user
+        self.firstCardImageView.image = UIImage(named: firstCardString)
+        self.secondCardImageView.image = UIImage(named: secondCardString)
+        
