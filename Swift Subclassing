@@ -1,0 +1,41 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+
+class Person {
+    
+    var Name:String = "Inital Name"
+    
+    init () {
+        
+    }
+    
+    func Walk() {
+        println("Im Walking")
+    }
+}
+
+var a = Person()
+a.Name = "Alice"
+a.Walk()
+
+class Superhuman : Person {
+    
+    var AlterEgoName:String = "Clark"
+    
+    func fly() {
+        println("Im Flying")
+    }
+    
+    override func Walk() {
+        println("Im walking really fast")
+        super.Walk()
+    }
+}
+
+var b = Superhuman ()
+b.Walk()
+
