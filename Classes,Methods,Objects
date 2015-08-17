@@ -1,0 +1,32 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+
+class Buddy {
+    
+    var Name:String = "Initial Name"
+    
+    init() {
+       self.sayCheese()
+    }
+    
+    func sayCheese () {
+        println("Cheese")
+    }
+}
+
+var firstPerson = Buddy()
+
+firstPerson.Name
+firstPerson.Name = "Bob"
+firstPerson.Name
+
+var secondPerson = Buddy()
+
+secondPerson.Name = "James"
+
+firstPerson.Name
+
