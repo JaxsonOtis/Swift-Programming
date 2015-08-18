@@ -1,0 +1,18 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+var a = 20
+
+if a < 30 {
+    println("Hello")
+}
+else if a > 10 && a < 30 {
+    println("I love you")
+}
+else {
+    println("goodbye")
+
+}
