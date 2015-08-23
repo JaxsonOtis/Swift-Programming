@@ -1,0 +1,36 @@
+func getCards() ->[Card] {
+        
+        
+        var generatedCards:[Card] = [Card]()
+        
+        //Generate some card objects
+        for index in 0...7 {
+            
+            //generate a random number
+            var randNumber:Int = Int(arc4random_uniform(13))
+            
+            //create a new card object
+            var firstCard:Card = Card()
+            firstCard.cardValue = randNumber
+            
+            //create second card object
+            var secondCard:Card = Card()
+            secondCard.cardValue = randNumber
+            
+            //place card objects into the array
+            generatedCards += [firstCard, secondCard]
+        }
+        //randomize the cards
+        for index in 0...generatedCards.count {
+            
+            //current card
+            var currentCard = generatedCards[index]
+            
+            //randomly choose another index
+            var randomIndex:Int = Int(arc4random_uniform(16))
+            
+            //swap objects at the two indexes
+            generatedCards[index] = generatedCards[randomIndex]
+            generatedCards[randomIndex] = currentCard
+        }
+        
