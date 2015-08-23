@@ -1,0 +1,44 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+//'for in' loop
+for index in 1...5 {
+    println("test")
+}
+
+var myArray:[String] = ["bear", "tiger", "zebra"]
+
+for animalName in myArray {
+    
+    println(animalName)
+}
+
+//'for loop' = c++ way
+for (var index = 0; index < 5; index++) {
+    println("bob")
+    
+}
+
+//while loop
+var count:Int = 0
+
+while count < 10
+{
+    println("bobjr")
+    count++
+}
+
+
+//do while loop
+
+var indicator:Int = 0
+
+do
+{
+    println("bob")
+    indicator++
+
+} while indicator < 10
